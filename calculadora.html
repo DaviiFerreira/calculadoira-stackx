@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Histórico</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <!-- Container da Calculadora -->
+        <div class="calculadora">
+            <div class="visor" id="visor">0</div>
+            <!-- Botões numéricos e de operação -->
+            <button onclick="adicionarInput('7')">7</button>
+            <button onclick="adicionarInput('8')">8</button>
+            <button onclick="adicionarInput('9')">9</button>
+            <button onclick="adicionarInput('/')">/</button>
+
+            <button onclick="adicionarInput('4')">4</button>
+            <button onclick="adicionarInput('5')">5</button>
+            <button onclick="adicionarInput('6')">6</button>
+            <button onclick="adicionarInput('*')">*</button>
+
+            <button onclick="adicionarInput('1')">1</button>
+            <button onclick="adicionarInput('2')">2</button>
+            <button onclick="adicionarInput('3')">3</button>
+            <button onclick="adicionarInput('-')">-</button>
+
+            <button onclick="adicionarInput('0')">0</button>
+            <button onclick="adicionarInput('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="adicionarInput('+')">+</button>
+
+            <button onclick="limpar()" style="grid-column: span 2; background-color: #dc3545;">C</button>
+            <button onclick="apagarUltimoDigito()" style="grid-column: span 2; background-color: #ffc107;">⌫</button>
+        </div>
+
+        <!-- Histórico -->
+        <div class="historico">
+            <h3>Histórico</h3>
+            <ul id="historico"></ul>
+        </div>
+    </div>
+
+
+
+    </script>
+</body>
+
+</html>
